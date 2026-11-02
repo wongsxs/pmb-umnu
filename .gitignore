@@ -1,0 +1,14 @@
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temp screenshots
+*.png
+!assets/**/*.png
+!uploads/**/*.png
+
+# Python
+__pycache__/
+*.pyc
