@@ -82,6 +82,167 @@
             color: #e2e8f0 !important;
         }
     
+
+        /* MODERN HEADER ENHANCEMENTS */
+        .navbar__landingpage {
+            background: #ffffff !important;
+            box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06) !important;
+            border-bottom: 1px solid #eef2f6 !important;
+            padding: 12px 0 !important;
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1000 !important;
+        }
+        .navbar__landingpage .navbar-info .info-kampus-logo img {
+            width: 48px !important;
+            height: 48px !important;
+            border-radius: 50% !important;
+            border: 2px solid #e2e8f0 !important;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06) !important;
+            transition: transform 0.2s ease !important;
+        }
+        .navbar__landingpage .navbar-info:hover .info-kampus-logo img {
+            transform: scale(1.05) !important;
+        }
+        .navbar__landingpage .navbar-info .info-kampus-text h1 {
+            font-size: 15.5px !important;
+            font-weight: 700 !important;
+            color: #0f172a !important;
+            line-height: 1.25 !important;
+            margin: 0 !important;
+        }
+        .navbar__landingpage .navbar-info .info-kampus-text p {
+            font-size: 11px !important;
+            font-weight: 600 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.8px !important;
+            color: #1d8fe1 !important;
+            margin: 0 !important;
+        }
+        .navbar__landingpage .navbar-menu {
+            display: flex !important;
+            align-items: center !important;
+            gap: 4px !important;
+        }
+        .navbar__landingpage .navbar-menu li a.navbar-item {
+            color: #475569 !important;
+            font-size: 13.5px !important;
+            font-weight: 600 !important;
+            padding: 8px 16px !important;
+            border-radius: 8px !important;
+            transition: all 0.2s ease !important;
+        }
+        .navbar__landingpage .navbar-menu li a.navbar-item:hover,
+        .navbar__landingpage .navbar-menu li.active a.navbar-item {
+            color: #1d8fe1 !important;
+            background: rgba(29, 143, 225, 0.08) !important;
+        }
+        .cta-language {
+            background: #f1f5f9 !important;
+            border: 1px solid #e2e8f0 !important;
+            color: #334155 !important;
+            font-size: 13px !important;
+            font-weight: 600 !important;
+            padding: 7px 12px !important;
+            border-radius: 8px !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 6px !important;
+            cursor: pointer !important;
+            transition: all 0.2s ease !important;
+        }
+        .cta-language:hover {
+            background: #e2e8f0 !important;
+        }
+
+        /* 2. FAQ SECTION STYLES */
+        .faq-card:hover {
+            border-color: #1d8fe1 !important;
+            box-shadow: 0 4px 14px rgba(29, 143, 225, 0.08) !important;
+        }
+        .faq-btn.active .faq-icon {
+            transform: rotate(180deg) !important;
+            color: #0b5694 !important;
+        }
+
+        /* 3. MODERN WHATSAPP & CONTACT STYLES */
+        .card-contact-us {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0369a1 100%),
+                        url("uploads/umnu/settingsim/233.jpg") !important;
+            background-size: cover !important;
+            background-position: center !important;
+            border-radius: 18px !important;
+            padding: 45px 50px !important;
+            box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.3) !important;
+            color: #ffffff !important;
+        }
+        .card-contact-us .content-contact h1 {
+            font-size: 26px !important;
+            font-weight: 800 !important;
+            color: #ffffff !important;
+            margin-bottom: 10px !important;
+            letter-spacing: -0.4px !important;
+        }
+        .card-contact-us .content-contact p {
+            color: #cbd5e1 !important;
+            font-size: 14.5px !important;
+            line-height: 1.6 !important;
+        }
+        #btn-whatsapp {
+            background: #25D366 !important;
+            border: none !important;
+            color: #ffffff !important;
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            padding: 12px 24px !important;
+            border-radius: 10px !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35) !important;
+            transition: all 0.25s ease !important;
+            cursor: pointer !important;
+        }
+        #btn-whatsapp:hover {
+            background: #20bd5a !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45) !important;
+        }
+        #btn-user-guide {
+            background: rgba(255, 255, 255, 0.15) !important;
+            backdrop-filter: blur(8px) !important;
+            border: 1.5px solid rgba(255, 255, 255, 0.4) !important;
+            color: #ffffff !important;
+            font-size: 14px !important;
+            font-weight: 600 !important;
+            padding: 11px 22px !important;
+            border-radius: 10px !important;
+            transition: all 0.2s ease !important;
+            cursor: pointer !important;
+        }
+        #btn-user-guide:hover {
+            background: rgba(255, 255, 255, 0.28) !important;
+            transform: translateY(-2px) !important;
+        }
+
+        /* Modern Floating WhatsApp */
+        #okewa-floating_cta {
+            background: #25D366 !important;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45) !important;
+            border-radius: 50px !important;
+            padding: 12px 20px !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            font-weight: 700 !important;
+            font-size: 13.5px !important;
+            transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+        }
+        #okewa-floating_cta:hover {
+            transform: scale(1.05) !important;
+            box-shadow: 0 10px 28px rgba(37, 211, 102, 0.6) !important;
+        }
+    
 </style>
 
     <!-- Jquery -->
@@ -460,6 +621,167 @@
             color: #e2e8f0 !important;
         }
     
+
+        /* MODERN HEADER ENHANCEMENTS */
+        .navbar__landingpage {
+            background: #ffffff !important;
+            box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06) !important;
+            border-bottom: 1px solid #eef2f6 !important;
+            padding: 12px 0 !important;
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1000 !important;
+        }
+        .navbar__landingpage .navbar-info .info-kampus-logo img {
+            width: 48px !important;
+            height: 48px !important;
+            border-radius: 50% !important;
+            border: 2px solid #e2e8f0 !important;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06) !important;
+            transition: transform 0.2s ease !important;
+        }
+        .navbar__landingpage .navbar-info:hover .info-kampus-logo img {
+            transform: scale(1.05) !important;
+        }
+        .navbar__landingpage .navbar-info .info-kampus-text h1 {
+            font-size: 15.5px !important;
+            font-weight: 700 !important;
+            color: #0f172a !important;
+            line-height: 1.25 !important;
+            margin: 0 !important;
+        }
+        .navbar__landingpage .navbar-info .info-kampus-text p {
+            font-size: 11px !important;
+            font-weight: 600 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.8px !important;
+            color: #1d8fe1 !important;
+            margin: 0 !important;
+        }
+        .navbar__landingpage .navbar-menu {
+            display: flex !important;
+            align-items: center !important;
+            gap: 4px !important;
+        }
+        .navbar__landingpage .navbar-menu li a.navbar-item {
+            color: #475569 !important;
+            font-size: 13.5px !important;
+            font-weight: 600 !important;
+            padding: 8px 16px !important;
+            border-radius: 8px !important;
+            transition: all 0.2s ease !important;
+        }
+        .navbar__landingpage .navbar-menu li a.navbar-item:hover,
+        .navbar__landingpage .navbar-menu li.active a.navbar-item {
+            color: #1d8fe1 !important;
+            background: rgba(29, 143, 225, 0.08) !important;
+        }
+        .cta-language {
+            background: #f1f5f9 !important;
+            border: 1px solid #e2e8f0 !important;
+            color: #334155 !important;
+            font-size: 13px !important;
+            font-weight: 600 !important;
+            padding: 7px 12px !important;
+            border-radius: 8px !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 6px !important;
+            cursor: pointer !important;
+            transition: all 0.2s ease !important;
+        }
+        .cta-language:hover {
+            background: #e2e8f0 !important;
+        }
+
+        /* 2. FAQ SECTION STYLES */
+        .faq-card:hover {
+            border-color: #1d8fe1 !important;
+            box-shadow: 0 4px 14px rgba(29, 143, 225, 0.08) !important;
+        }
+        .faq-btn.active .faq-icon {
+            transform: rotate(180deg) !important;
+            color: #0b5694 !important;
+        }
+
+        /* 3. MODERN WHATSAPP & CONTACT STYLES */
+        .card-contact-us {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0369a1 100%),
+                        url("uploads/umnu/settingsim/233.jpg") !important;
+            background-size: cover !important;
+            background-position: center !important;
+            border-radius: 18px !important;
+            padding: 45px 50px !important;
+            box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.3) !important;
+            color: #ffffff !important;
+        }
+        .card-contact-us .content-contact h1 {
+            font-size: 26px !important;
+            font-weight: 800 !important;
+            color: #ffffff !important;
+            margin-bottom: 10px !important;
+            letter-spacing: -0.4px !important;
+        }
+        .card-contact-us .content-contact p {
+            color: #cbd5e1 !important;
+            font-size: 14.5px !important;
+            line-height: 1.6 !important;
+        }
+        #btn-whatsapp {
+            background: #25D366 !important;
+            border: none !important;
+            color: #ffffff !important;
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            padding: 12px 24px !important;
+            border-radius: 10px !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35) !important;
+            transition: all 0.25s ease !important;
+            cursor: pointer !important;
+        }
+        #btn-whatsapp:hover {
+            background: #20bd5a !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45) !important;
+        }
+        #btn-user-guide {
+            background: rgba(255, 255, 255, 0.15) !important;
+            backdrop-filter: blur(8px) !important;
+            border: 1.5px solid rgba(255, 255, 255, 0.4) !important;
+            color: #ffffff !important;
+            font-size: 14px !important;
+            font-weight: 600 !important;
+            padding: 11px 22px !important;
+            border-radius: 10px !important;
+            transition: all 0.2s ease !important;
+            cursor: pointer !important;
+        }
+        #btn-user-guide:hover {
+            background: rgba(255, 255, 255, 0.28) !important;
+            transform: translateY(-2px) !important;
+        }
+
+        /* Modern Floating WhatsApp */
+        #okewa-floating_cta {
+            background: #25D366 !important;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45) !important;
+            border-radius: 50px !important;
+            padding: 12px 20px !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            font-weight: 700 !important;
+            font-size: 13.5px !important;
+            transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+        }
+        #okewa-floating_cta:hover {
+            transform: scale(1.05) !important;
+            box-shadow: 0 10px 28px rgba(37, 211, 102, 0.6) !important;
+        }
+    
 </style>
 <nav class="navbar__landingpage sticky" id="main-navbar-landing">
     <div class="container">
@@ -484,10 +806,11 @@
                 </div>
 
                 <ul class="navbar-menu">
-                                                                        <li class="active"><a class="navbar-item" href="index.html">Beranda</a></li>
-                                                                            <li class=""><a class="navbar-item" href="jalur-seleksi.html">Jalur Pendaftaran</a></li>
-                            <li class=""><a class="navbar-item" href="program-studi.html">Program Studi</a></li>
-                                                                <li class=""><a class="navbar-item" href="pengumuman.html">Informasi</a></li>
+                    <li class="active"><a class="navbar-item" href="index.html">Beranda</a></li>
+                    <li class=""><a class="navbar-item" href="jalur-seleksi.html">Jalur Pendaftaran</a></li>
+                    <li class=""><a class="navbar-item" href="program-studi.html">Program Studi</a></li>
+                    <li class=""><a class="navbar-item" href="pengumuman.html">Informasi</a></li>
+                    <li class=""><a class="navbar-item" href="#faq-section">FAQ</a></li>
                 </ul>
                 <div class="navbar-right">
                     <div class="dropdown" id="dropdown-language">
@@ -497,9 +820,12 @@
                             <li><a class="dropdown-item" href="?lang=en" translate="no">EN - English</a></li>
                         </ul>
                     </div>
-                                            <div class="cta-navbar">
+                                            <div class="cta-navbar" style="display: flex; align-items: center; gap: 8px;">
                             <a href="login.html">
-                                <button class="button-pmb_primary-outline ripple">Masuk</button>
+                                <button class="button-pmb_primary-outline ripple" style="border-radius: 8px; font-weight: 600; padding: 7px 16px;">Masuk</button>
+                            </a>
+                            <a href="jalur-seleksi.html">
+                                <button class="button-pmb_primary ripple" style="border-radius: 8px; font-weight: 600; padding: 8px 18px; box-shadow: 0 4px 12px rgba(29, 143, 225, 0.3);">Daftar</button>
                             </a>
                         </div>
                                     </div>
@@ -798,6 +1124,96 @@
     <div class="line-bold"></div>
 </section>
 
+
+<!-- FAQ SECTION -->
+<section id="faq-section" style="padding: 70px 0 65px; background: #ffffff;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="faq-header text-center mb-5">
+                    <span style="display: inline-block; background: rgba(29, 143, 225, 0.1); color: #1d8fe1; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; padding: 6px 18px; border-radius: 50px; margin-bottom: 12px;">Pusat Bantuan & FAQ</span>
+                    <h2 style="font-size: 30px; font-weight: 800; color: #0f172a; margin-bottom: 10px; letter-spacing: -0.5px;">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+                    <p style="color: #64748b; font-size: 15px; max-width: 650px; margin: 0 auto;">Temukan jawaban cepat seputar jalur penerimaan, beasiswa KIP Kuliah, biaya pendidikan, dan tahapan seleksi di Universitas Ma'arif Nahdlatul Ulama Kebumen.</p>
+                </div>
+
+                <div class="faq-accordion" id="faqAccordion">
+                    <!-- FAQ 1 -->
+                    <div class="faq-card" style="border: 1.5px solid #e2e8f0; border-radius: 12px; margin-bottom: 14px; overflow: hidden; transition: all 0.2s ease;">
+                        <button class="faq-btn" type="button" onclick="toggleFaq(this)" style="width: 100%; text-align: left; background: #ffffff; border: none; padding: 20px 24px; font-size: 15.5px; font-weight: 700; color: #1e293b; display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer;">
+                            <span>1. Kapan pendaftaran mahasiswa baru UMNU Kebumen T.A 2026/2027 dibuka?</span>
+                            <span class="faq-icon material-icons-round" style="font-size: 24px; color: #1d8fe1; transition: transform 0.25s ease;">expand_more</span>
+                        </button>
+                        <div class="faq-collapse" style="display: none; padding: 0 24px 20px; color: #475569; font-size: 14.5px; line-height: 1.7; border-top: 1px solid #f1f5f9;">
+                            Pendaftaran Mahasiswa Baru (PMB) dibuka sepanjang tahun melalui 3 gelombang seleksi:
+                            <ul style="margin: 8px 0 0 20px; padding: 0;">
+                                <li><strong>Gelombang 1:</strong> 1 Januari – 30 April 2026 (Potongan UKT & Jalur Beasiswa)</li>
+                                <li><strong>Gelombang 2:</strong> 1 Mei – 31 Juli 2026 (Jalur Reguler & Prestasi)</li>
+                                <li><strong>Gelombang 3:</strong> 1 Agustus – 30 September 2026 (Gelombang Khusus)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-card" style="border: 1.5px solid #e2e8f0; border-radius: 12px; margin-bottom: 14px; overflow: hidden; transition: all 0.2s ease;">
+                        <button class="faq-btn" type="button" onclick="toggleFaq(this)" style="width: 100%; text-align: left; background: #ffffff; border: none; padding: 20px 24px; font-size: 15.5px; font-weight: 700; color: #1e293b; display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer;">
+                            <span>2. Apa saja jalur seleksi yang tersedia di UMNU Kebumen?</span>
+                            <span class="faq-icon material-icons-round" style="font-size: 24px; color: #1d8fe1; transition: transform 0.25s ease;">expand_more</span>
+                        </button>
+                        <div class="faq-collapse" style="display: none; padding: 0 24px 20px; color: #475569; font-size: 14.5px; line-height: 1.7; border-top: 1px solid #f1f5f9;">
+                            UMNU Kebumen menyediakan beberapa jalur masuk:
+                            <ul style="margin: 8px 0 0 20px; padding: 0;">
+                                <li><strong>Jalur Reguler:</strong> Untuk lulusan SMA/SMK/MA/Sederajat tanpa batasan tahun kelulusan.</li>
+                                <li><strong>Jalur Beasiswa KIP Kuliah:</strong> Bebas biaya kuliah 100% dan mendapat bantuan biaya hidup bulanan.</li>
+                                <li><strong>Jalur Beasiswa Tahfidz & Prestasi:</strong> Potongan biaya kuliah bagi penghafal Al-Qur'an dan pemenang lomba kejuaraan.</li>
+                                <li><strong>Jalur RPL (Rekognisi Pembelajaran Lampau):</strong> Konversi SKS bagi lulusan Diploma atau pekerja yang ingin lanjut S1.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-card" style="border: 1.5px solid #e2e8f0; border-radius: 12px; margin-bottom: 14px; overflow: hidden; transition: all 0.2s ease;">
+                        <button class="faq-btn" type="button" onclick="toggleFaq(this)" style="width: 100%; text-align: left; background: #ffffff; border: none; padding: 20px 24px; font-size: 15.5px; font-weight: 700; color: #1e293b; display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer;">
+                            <span>3. Bagaimana tahapan pendaftaran secara online?</span>
+                            <span class="faq-icon material-icons-round" style="font-size: 24px; color: #1d8fe1; transition: transform 0.25s ease;">expand_more</span>
+                        </button>
+                        <div class="faq-collapse" style="display: none; padding: 0 24px 20px; color: #475569; font-size: 14.5px; line-height: 1.7; border-top: 1px solid #f1f5f9;">
+                            Pendaftaran online dapat diselesaikan dalam 4 tahapan mudah:
+                            <ol style="margin: 8px 0 0 20px; padding: 0;">
+                                <li>Buka menu <strong>Jalur Pendaftaran</strong> dan klik <em>Daftar Sekarang</em>.</li>
+                                <li>Isi formulir biodata diri dan buat akun pendaftar online.</li>
+                                <li>Lakukan pembayaran biaya pendaftaran via Virtual Account / transfer bank.</li>
+                                <li>Login ke portal pendaftaran, unggah berkas persyaratan (KTP, KK, Ijazah), dan tunggu pengumuman kelulusan.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-card" style="border: 1.5px solid #e2e8f0; border-radius: 12px; margin-bottom: 14px; overflow: hidden; transition: all 0.2s ease;">
+                        <button class="faq-btn" type="button" onclick="toggleFaq(this)" style="width: 100%; text-align: left; background: #ffffff; border: none; padding: 20px 24px; font-size: 15.5px; font-weight: 700; color: #1e293b; display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer;">
+                            <span>4. Apakah biaya kuliah di UMNU Kebumen bisa diangsur?</span>
+                            <span class="faq-icon material-icons-round" style="font-size: 24px; color: #1d8fe1; transition: transform 0.25s ease;">expand_more</span>
+                        </button>
+                        <div class="faq-collapse" style="display: none; padding: 0 24px 20px; color: #475569; font-size: 14.5px; line-height: 1.7; border-top: 1px solid #f1f5f9;">
+                            <strong>Ya, sangat bisa!</strong> UMNU Kebumen memiliki skema pembayaran angsuran bertahap setiap semester tanpa bunga tambahan, demi memastikan pendidikan tinggi dapat dijangkau oleh seluruh lapisan masyarakat.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-card" style="border: 1.5px solid #e2e8f0; border-radius: 12px; margin-bottom: 14px; overflow: hidden; transition: all 0.2s ease;">
+                        <button class="faq-btn" type="button" onclick="toggleFaq(this)" style="width: 100%; text-align: left; background: #ffffff; border: none; padding: 20px 24px; font-size: 15.5px; font-weight: 700; color: #1e293b; display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer;">
+                            <span>5. Kemana saya bisa menghubungi panitia jika butuh bantuan?</span>
+                            <span class="faq-icon material-icons-round" style="font-size: 24px; color: #1d8fe1; transition: transform 0.25s ease;">expand_more</span>
+                        </button>
+                        <div class="faq-collapse" style="display: none; padding: 0 24px 20px; color: #475569; font-size: 14.5px; line-height: 1.7; border-top: 1px solid #f1f5f9;">
+                            Anda dapat langsung berkonsultasi dengan Panitia PMB melalui <strong>WhatsApp Center: 0852-1699-3300</strong> (Fast Response) atau berkunjung langsung ke Kantor PMB Gedung Rektorat UMNU Kebumen (Senin - Sabtu pukul 08.00 - 16.00 WIB).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="contact-us" class="d-none d-sm-block d-md-block">
     <div class="container">
         <div class="row">
@@ -1039,6 +1455,28 @@
         firebase.analytics();
     </script>
     
-                </body>
+                
+    <script>
+        function toggleFaq(btn) {
+            const collapse = btn.nextElementSibling;
+            const icon = btn.querySelector('.faq-icon');
+            const isOpen = collapse.style.display === 'block';
+
+            // Close all
+            document.querySelectorAll('.faq-collapse').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.faq-btn').forEach(b => {
+                b.classList.remove('active');
+                b.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+            });
+
+            if (!isOpen) {
+                collapse.style.display = 'block';
+                btn.classList.add('active');
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+    
+</body>
 
 </html>
