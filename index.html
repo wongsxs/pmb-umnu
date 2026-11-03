@@ -49,7 +49,40 @@
         .select2-dropdown {
             z-index: 90;
         }
-    </style>
+    
+        #dropdown-language .dropdown-menu {
+            display: none;
+            list-style: none;
+            padding: 8px 0;
+            margin: 0;
+        }
+        #dropdown-language .dropdown-menu.show {
+            display: block;
+        }
+        #dropdown-language ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+        .info-kampus-logo img {
+            border-radius: 50%;
+        }
+        #banner-section {
+            background: linear-gradient(90deg, rgba(15, 23, 42, 0.92) 0%, rgba(15, 23, 42, 0.8) 45%, rgba(15, 23, 42, 0.35) 100%),
+                url(uploads/umnu/settingsim/163.jpg) !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            background-position: center right !important;
+        }
+        #banner-section .copy-desktop h1, #banner-section .copy-mobile h1 {
+            color: #ffffff !important;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.4) !important;
+        }
+        #banner-section .copy-desktop p, #banner-section .copy-mobile p {
+            color: #e2e8f0 !important;
+        }
+    
+</style>
 
     <!-- Jquery -->
     <script src="assets/v4/js/jquery.min.js"></script>
@@ -394,7 +427,40 @@
             box-shadow: 0 0 0 0.25rem #1d8fe125;
         }
 
-    </style>
+    
+        #dropdown-language .dropdown-menu {
+            display: none;
+            list-style: none;
+            padding: 8px 0;
+            margin: 0;
+        }
+        #dropdown-language .dropdown-menu.show {
+            display: block;
+        }
+        #dropdown-language ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+        .info-kampus-logo img {
+            border-radius: 50%;
+        }
+        #banner-section {
+            background: linear-gradient(90deg, rgba(15, 23, 42, 0.92) 0%, rgba(15, 23, 42, 0.8) 45%, rgba(15, 23, 42, 0.35) 100%),
+                url(uploads/umnu/settingsim/163.jpg) !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            background-position: center right !important;
+        }
+        #banner-section .copy-desktop h1, #banner-section .copy-mobile h1 {
+            color: #ffffff !important;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.4) !important;
+        }
+        #banner-section .copy-desktop p, #banner-section .copy-mobile p {
+            color: #e2e8f0 !important;
+        }
+    
+</style>
 <nav class="navbar__landingpage sticky" id="main-navbar-landing">
     <div class="container">
         <div class="row">
@@ -491,13 +557,13 @@
                         <div class="flex-form-pmb">
                             <div class="form-pmb">
                                 <select class="form__select2" name="jenjang" id="select-jenjang" style="width:100%">
-                                                                            <option translate="no" value="" selected>-- Pilih Jenjang --</option>
+                                                                            <option translate="no" value="" selected>Pilih Jenjang Pendidikan</option>
                                                                             <option translate="no" value="S1" >S1 - Strata 1</option>
                                                                     </select>
                             </div>
                             <div class="form-pmb">
                                 <select class="form__select2_prodi" name="unit" id="select-prodi" style="width:100%">
-                                                                            <option value="" selected>-- Pilih Program Studi --</option>
+                                                                            <option value="" selected>Pilih Program Studi</option>
                                                                             <option value="54293" >S1 - AGROTEKNOLOGI</option>
                                                                             <option value="93208" >S1 - MANAJEMEN HAJI DAN UMRAH</option>
                                                                             <option value="86207" >S1 - PENDIDIKAN ANAK USIA DINI</option>
@@ -511,7 +577,7 @@
                             </div>
                                                         <div class="form-pmb">
                                 <select class="form__select2" name="sistem" style="width:100%">
-                                                                            <option value="" selected>-- Pilih Sistem Kuliah --</option>
+                                                                            <option value="" selected>Pilih Sistem Kuliah</option>
                                                                             <option value="1" >Reguler</option>
                                                                             <option value="3" >RPL</option>
                                                                     </select>
