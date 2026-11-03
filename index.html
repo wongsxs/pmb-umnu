@@ -282,6 +282,227 @@
             </script>
     
     
+
+    <!-- 3 UI/UX ENHANCEMENTS: HEADER, FAQ, WHATSAPP & CONTACT -->
+    <style type="text/css">
+        /* 1. MODERN HEADER */
+        .navbar__landingpage {
+            background: #ffffff !important;
+            box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06) !important;
+            border-bottom: 1px solid #eef2f6 !important;
+            padding: 12px 0 !important;
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1000 !important;
+        }
+        .navbar__landingpage .navbar-info .info-kampus-logo img,
+        .info-kampus .info-kampus-logo img,
+        .info-kampus-logo img {
+            width: 48px !important;
+            height: 48px !important;
+            border-radius: 50% !important;
+            border: 2px solid #e2e8f0 !important;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06) !important;
+            transition: transform 0.2s ease !important;
+        }
+        .navbar__landingpage .navbar-info:hover .info-kampus-logo img {
+            transform: scale(1.06) !important;
+        }
+        .navbar__landingpage .navbar-info .info-kampus-text h1 {
+            font-size: 15.5px !important;
+            font-weight: 700 !important;
+            color: #0f172a !important;
+            line-height: 1.25 !important;
+            margin: 0 !important;
+        }
+        .navbar__landingpage .navbar-info .info-kampus-text p {
+            font-size: 11px !important;
+            font-weight: 600 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.8px !important;
+            color: #1d8fe1 !important;
+            margin: 0 !important;
+        }
+        .navbar__landingpage .navbar-menu {
+            display: flex !important;
+            align-items: center !important;
+            gap: 4px !important;
+        }
+        .navbar__landingpage .navbar-menu li a.navbar-item {
+            color: #475569 !important;
+            font-size: 13.5px !important;
+            font-weight: 600 !important;
+            padding: 8px 16px !important;
+            border-radius: 8px !important;
+            transition: all 0.2s ease !important;
+        }
+        .navbar__landingpage .navbar-menu li a.navbar-item:hover,
+        .navbar__landingpage .navbar-menu li.active a.navbar-item {
+            color: #1d8fe1 !important;
+            background: rgba(29, 143, 225, 0.08) !important;
+        }
+        .cta-language {
+            background: #f1f5f9 !important;
+            border: 1px solid #e2e8f0 !important;
+            color: #334155 !important;
+            font-size: 13px !important;
+            font-weight: 600 !important;
+            padding: 7px 12px !important;
+            border-radius: 8px !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 6px !important;
+            cursor: pointer !important;
+            transition: all 0.2s ease !important;
+        }
+        .cta-language:hover {
+            background: #e2e8f0 !important;
+        }
+        #dropdown-language .dropdown-menu {
+            display: none;
+            list-style: none !important;
+            padding: 8px 0;
+            margin: 0;
+        }
+        #dropdown-language .dropdown-menu.show {
+            display: block;
+        }
+        #dropdown-language ul {
+            list-style: none !important;
+            padding-left: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        /* 2. FAQ STYLES */
+        .faq-card {
+            border: 1.5px solid #e2e8f0 !important;
+            border-radius: 12px !important;
+            margin-bottom: 14px !important;
+            overflow: hidden !important;
+            background: #ffffff !important;
+            transition: all 0.2s ease !important;
+        }
+        .faq-card:hover {
+            border-color: #1d8fe1 !important;
+            box-shadow: 0 4px 16px rgba(29, 143, 225, 0.08) !important;
+        }
+        .faq-btn {
+            width: 100% !important;
+            text-align: left !important;
+            background: #ffffff !important;
+            border: none !important;
+            padding: 20px 24px !important;
+            font-size: 15.5px !important;
+            font-weight: 700 !important;
+            color: #1e293b !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            gap: 16px !important;
+            cursor: pointer !important;
+            transition: background-color 0.2s ease !important;
+        }
+        .faq-btn:hover {
+            background: #f8fafc !important;
+        }
+        .faq-btn.active .faq-icon {
+            transform: rotate(180deg) !important;
+            color: #0b5694 !important;
+        }
+        .faq-collapse {
+            display: none;
+            padding: 0 24px 20px !important;
+            color: #475569 !important;
+            font-size: 14.5px !important;
+            line-height: 1.7 !important;
+            border-top: 1px solid #f1f5f9 !important;
+        }
+
+        /* 3. MODERN WHATSAPP & CONTACT SECTION */
+        .card-contact-us {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0369a1 100%),
+                        url("uploads/umnu/settingsim/233.jpg") !important;
+            background-size: cover !important;
+            background-position: center !important;
+            border-radius: 20px !important;
+            padding: 45px 50px !important;
+            box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.35) !important;
+            color: #ffffff !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        }
+        .card-contact-us .content-contact h1 {
+            font-size: 26px !important;
+            font-weight: 800 !important;
+            color: #ffffff !important;
+            margin-bottom: 10px !important;
+            letter-spacing: -0.4px !important;
+        }
+        .card-contact-us .content-contact p {
+            color: #cbd5e1 !important;
+            font-size: 14.5px !important;
+            line-height: 1.6 !important;
+        }
+        #btn-whatsapp {
+            background: #25D366 !important;
+            border: none !important;
+            color: #ffffff !important;
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            padding: 12px 24px !important;
+            border-radius: 10px !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35) !important;
+            transition: all 0.25s ease !important;
+            cursor: pointer !important;
+        }
+        #btn-whatsapp:hover {
+            background: #20bd5a !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5) !important;
+            color: #ffffff !important;
+        }
+        #btn-user-guide {
+            background: rgba(255, 255, 255, 0.15) !important;
+            backdrop-filter: blur(8px) !important;
+            border: 1.5px solid rgba(255, 255, 255, 0.4) !important;
+            color: #ffffff !important;
+            font-size: 14px !important;
+            font-weight: 600 !important;
+            padding: 11px 22px !important;
+            border-radius: 10px !important;
+            transition: all 0.2s ease !important;
+            cursor: pointer !important;
+            display: inline-flex !important;
+            align-items: center !important;
+        }
+        #btn-user-guide:hover {
+            background: rgba(255, 255, 255, 0.28) !important;
+            transform: translateY(-2px) !important;
+            color: #ffffff !important;
+        }
+
+        /* Floating WhatsApp CTA */
+        #okewa-floating_cta {
+            background: #25D366 !important;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45) !important;
+            border-radius: 50px !important;
+            padding: 12px 20px !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            font-weight: 700 !important;
+            font-size: 13.5px !important;
+            color: #ffffff !important;
+            transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+        }
+        #okewa-floating_cta:hover {
+            transform: scale(1.05) !important;
+            box-shadow: 0 10px 28px rgba(37, 211, 102, 0.6) !important;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -1219,20 +1440,20 @@
         <div class="row">
             <div class="col-lg-12 nopadding">
                 <div class="card-contact-us">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-12 col-lg-7 col-xl-7">
                             <div class="content-contact">
-                                <h1>Kami siap membantu anda</h1>
-                                <p>Apabila kamu memiliki kendala atau pertanyaan. Silakan hubungi kami atau dapat juga membaca Petunjuk Pendaftaran terlebih dahulu</p>
+                                <h1>Kami Siap Membantu Anda</h1>
+                                <p>Apabila kamu memiliki kendala atau pertanyaan seputar PMB UMNU Kebumen, silakan hubungi kami melalui WhatsApp atau baca Petunjuk Pendaftaran terlebih dahulu.</p>
                             </div>
                         </div>
                         <div class="col-12 col-lg-5 col-xl-5">
-                            <div class="cta">
-                                                                                                        <a target="_blank" href="https://wa.me/6285216993300?text=Saya tanya terkait pendaftaran" class="btn btn-outline-white btn-contactus">
-                                        <button id="btn-whatsapp"><img src="assets/v4/img/landing-page/icon-wa.svg" alt="">Whatsapp</button>
-                                    </a>
-                                                                <a href="user-guide.html">
-                                    <button id="btn-user-guide">Petunjuk Pendaftaran</button>
+                            <div class="cta" style="display: flex; align-items: center; justify-content: flex-end; gap: 12px; flex-wrap: wrap;">
+                                <a target="_blank" href="https://wa.me/6285216993300?text=Halo%20Admin%20PMB%20UMNU%20Kebumen,%20saya%20ingin%20bertanya%20seputar%20pendaftaran" style="text-decoration: none;">
+                                    <button id="btn-whatsapp" type="button"><img src="assets/v4/img/landing-page/icon-wa.svg" alt="" style="width: 18px; height: 18px; filter: brightness(0) invert(1);"> WhatsApp (0852-1699-3300)</button>
+                                </a>
+                                <a href="user-guide.html" style="text-decoration: none;">
+                                    <button id="btn-user-guide" type="button"><span class="material-icons-round" style="font-size: 18px; margin-right: 6px; vertical-align: middle;">menu_book</span> Petunjuk Pendaftaran</button>
                                 </a>
                             </div>
                         </div>
