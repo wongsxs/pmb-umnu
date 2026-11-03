@@ -1,0 +1,836 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Sistem Informasi Akademik solusi terbaik Universitas. Langsung Bisa Digunakan, Tidak Ribet dan Pelaporan Beres.">
+    <meta name="keywords" content="Siakad, Forlap PDDIKTI, Feeder PDDIKTI, Sistem Informasi Akademik">
+    <meta name="author" content="siAkad Cloud">
+
+    <meta name="og:title" content="S1 PENDIDIKAN BAHASA INGGRIS | siAkad Cloud">
+    <meta name="og:description" content="Sistem Informasi Akademik solusi terbaik Universitas. Langsung Bisa Digunakan, Tidak Ribet dan Pelaporan Beres.">
+    <meta name="og:site_name" content="Sistem Informasi Akademik">
+
+    <!-- Load Base CSS -->
+    <link rel="stylesheet" href="assets/v4/external/dist/css/bootstrap.min.css" />
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/v4/external/air-datepicker/css/datepicker.css" />
+    <link rel="stylesheet" href="assets/default/css/style.wa.min.css" />
+
+    <!-- Typeahead -->
+    <link href="assets/default/css/typeahead-bootstrap/typeaheadjs.css" rel="stylesheet" type="text/css" />
+    <link href="assets/v4/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/v4/css/main.css" />
+
+    <!-- Fav Icon -->
+    <link rel="icon" type="img/png" href="uploads/umnu/logoaplikasi/1894.jpg" sizes="16x16" />
+
+    <!-- Title -->
+    <title translate="no">S1 PENDIDIKAN BAHASA INGGRIS | siAkad Cloud</title>
+
+    <!-- Get Primary Secondary Color -->
+    
+    <style type="text/css">
+        :root {
+            --siakadcloud-primary: #1d8fe1;
+            --siakadcloud-secondary: #ffa500;
+        }
+        .select2-dropdown {
+            z-index: 90;
+        }
+    </style>
+
+    <!-- Jquery -->
+    <script src="assets/v4/js/jquery.min.js"></script>
+
+    <!-- light gallery -->
+    <link rel="stylesheet" href="assets/v4/css/lightgallery.min.css">
+
+    <!-- bawaan header lama-->
+    <script src="assets/v4/js/jquery.min.js"></script>
+    <script src="assets/default/js/moment.js"></script>
+    <script src="assets/default/js/bootstrap-datetimepicker.js"></script>
+    <script src="assets/default/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/default/js/id.js"></script>
+    <script src="assets/default/js/bootbox.js"></script>
+    <script src="assets/v4/external/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/default/js/jquery-ui-1.10.3.min.js"></script>
+
+    <!-- Typeahead -->
+    <script src="assets/default/js/typeahead.jquery.js"></script>
+    <script src="assets/default/js/jquery.ajax.js"></script>
+    <script src="assets/default/js/forhtml.js"></script>
+    <script src="assets/default/js/custom.js"></script>
+
+    <!-- Datepicker -->
+    <script src="assets/v4/external/air-datepicker/js/datepicker.min.js"></script>
+    <script src="assets/v4/external/air-datepicker/js/datepicker.id.js"></script>
+
+    <!-- Select2 -->
+    <script src="assets/v4/js/select2.min.js"></script>
+
+    <script type="text/javascript">
+        var g_abs_url = "/spmbfront/";
+        var g_page = "/spmbfront/program-studi-detail";
+
+                    var g_extpage = g_page + "/detail";
+            </script>
+    
+    
+</head>
+
+<body>
+                <nav class="navbar__landingpage sticky" id="main-navbar-landing">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-content d-none d-sm-flex d-md-flex">
+                <a href="index.html">
+                    <div class="navbar-info">
+                        <div class="info-kampus-logo">
+                            <img src="uploads/umnu/logoaplikasi/1894.jpg" alt="Logo Kampus" />
+                        </div>
+                        <div class="info-kampus-text">
+                            <p>Penerimaan Mahasiswa Baru</p>
+                            <h1>Universitas Ma'arif Nahdlatul Ulama Kebumen</h1>
+                        </div>
+                    </div>
+                </a>
+
+                <ul class="navbar-menu">
+                                                                        <li class=""><a class="navbar-item" href="index.html">Beranda</a></li>
+                                                                            <li class=""><a class="navbar-item" href="jalur-seleksi.html">Jalur Pendaftaran</a></li>
+                            <li class="active"><a class="navbar-item" href="program-studi.html">Program Studi</a></li>
+                                                                <li class=""><a class="navbar-item" href="pengumuman.html">Informasi</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <div class="dropdown dim" id="dropdown-language">
+                        <button class="cta-language" data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-target="menu-language" aria-expanded="false">ID<span class="material-icons-round">language</span></button>
+                        <ul class="dropdown-menu dropdown-menu-end dim" id="menu-language">
+                            <li><a class="dropdown-item" href="/spmbfront/program-studi-detail/detail/88203?lang=id" translate="no">IND - Indonesia</a></li>
+                            <li><a class="dropdown-item" href="/spmbfront/program-studi-detail/detail/88203?lang=en" translate="no">EN - English</a></li>
+                        </ul>
+                    </div>
+                                            <div class="cta-navbar">
+                            <a href="login.html">
+                                <button class="button-pmb_primary-outline ripple" translate="no">Masuk</button>
+                            </a>
+                        </div>
+                                    </div>
+            </div>
+            <!-- Navbar Mobile  -->
+            <div class="navbar-content-mobile">
+                <div class="left-content">
+                                                                        <a href="program-studi.html">
+                                <span class="material-icons">
+                                    west
+                                </span>
+                            </a>
+                                                                <div class="title-navbar-mobile">
+                        <h1>S1 PENDIDIKAN BAHASA INGGRIS</h1>
+                    </div>
+                </div>
+            </div>
+                                        <div class="cta-navbar-mobile option-login">
+                    <div class="info">
+                        <h3>Sudah punya akun ?</h3>
+                        <p>Masuk untuk melanjutkan pendaftaran</p>
+                    </div>
+                    <a href="login.html">
+                        <button class="button-pmb_primary-outline ripple">Masuk</button>
+                    </a>
+                </div>
+                                </div>
+    </div>
+</nav>
+
+        <script src="assets/v4/external/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/v4/js/background-dim.js"></script>
+    <script src="assets/v4/js/lightgallery-all.min.js"></script>
+    
+<style type="text/css">
+    body.mobile-menu-open {
+        overflow: hidden;
+    }
+
+    @media (max-width: 989.98px) {
+        .navbar__landingpage .navbar-left-group {
+            display: flex;
+            align-items: center;
+            min-width: 0;
+        }
+
+        .navbar__landingpage .mobile-menu-toggle-in-header {
+            border: 0;
+            background: transparent;
+            color: inherit;
+            padding: 0;
+            margin-right: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 130;
+        }
+
+        .navbar__landingpage .mobile-menu-toggle-in-header .material-icons-round {
+            font-size: 28px;
+            color: inherit;
+        }
+
+        .navbar__landingpage .mobile-menu-toggle-in-header .menu-icon-close {
+            display: none;
+        }
+
+        .navbar__landingpage.is-open .mobile-menu-toggle-in-header .menu-icon-open {
+            display: none;
+        }
+
+        .navbar__landingpage.is-open .mobile-menu-toggle-in-header .menu-icon-close {
+            display: inline-block;
+        }
+
+        .navbar__landingpage.is-open .mobile-menu-toggle-in-header,
+        .navbar__landingpage.is-open .mobile-menu-toggle-in-header .material-icons-round {
+            color: #1d8fe1;
+        }
+
+        .navbar__landingpage .mobile-nav-panel {
+            display: block;
+            position: fixed;
+            inset: 0;
+            background: #ffffff;
+            z-index: 120;
+            padding: 60px 16px 24px;
+            overflow-y: auto;
+            transform: translateX(-100%);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: transform 0.25s ease, opacity 0.25s ease;
+        }
+
+        .navbar__landingpage.is-open .mobile-nav-panel {
+            transform: translateX(0);
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 0;
+            width: 100%;
+            padding: 0;
+            margin-bottom: 0;
+            display: flex;
+        }
+
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile li {
+            display: block;
+            width: 100%;
+            padding: 12px 0;
+            border-bottom: 1px solid #eef1f5;
+        }
+
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile li.dropdown {
+            display: block;
+        }
+
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .navbar-item {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+        }
+
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .navbar-item,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .navbar-item .material-icons-round,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .dropdown-menu .dropdown-item,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .dropdown-menu .dropdown-item .material-icons-round {
+            color: #1d8fe1;
+            transition: color 0.2s ease, filter 0.2s ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .navbar-item,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .dropdown-menu .dropdown-item {
+            box-shadow: none !important;
+            outline: 0;
+        }
+
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .navbar-item:hover,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .navbar-item:focus,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .navbar-item:active,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .navbar-item.show,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .dropdown-menu .dropdown-item:hover,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .dropdown-menu .dropdown-item:focus,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .dropdown-menu .dropdown-item:focus-visible,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .dropdown-menu .dropdown-item:active,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .dropdown-menu .dropdown-item.active {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            outline: 0;
+        }
+
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .navbar-item:focus-visible {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            outline: 0;
+        }
+
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile li:hover > .navbar-item,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile li.active > .navbar-item,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile li:hover > .navbar-item .material-icons-round,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile li.active > .navbar-item .material-icons-round,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .dropdown-menu .dropdown-item:hover,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .dropdown-menu .dropdown-item.active,
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .dropdown-menu .dropdown-item:hover .material-icons-round {
+            color: #1d8fe1;
+            filter: brightness(90%);
+        }
+
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .dropdown-menu .dropdown-item.active .material-icons-round {
+            color: #1d8fe1;
+            filter: brightness(90%);
+        }
+
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .dropdown-menu {
+            position: static !important;
+            transform: none !important;
+            border: 0;
+            box-shadow: none;
+            width: 100%;
+            inset: auto !important;
+            margin: 0;
+            padding: 8px 0 4px;
+            float: none;
+        }
+
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .dropdown-menu .dropdown-item {
+            padding: 8px 0;
+        }
+
+        .navbar__landingpage .mobile-nav-panel .navbar-mobile .dropdown-menu li {
+            border-bottom: 0;
+            padding: 0;
+        }
+
+        .cta-navbar-mobile.option-login {
+            position: sticky;
+            top: 70px;
+            z-index: 99;
+        }
+    }
+
+    @media (min-width: 990px) {
+        .navbar__landingpage .navbar-left-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar__landingpage .mobile-menu-toggle-in-header,
+        .navbar__landingpage .mobile-nav-panel {
+            display: none !important;
+        }
+    }
+
+    #banner-section {
+        background: radial-gradient(47.81% 88.03% at 82.08% 33.88%, rgba(33, 33, 33, 0) 30.73%, rgba(33, 33, 33, 0.6) 100%),
+            url(uploads/umnu/settingsim/163.jpg?80111);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card-contact-us {
+        background: linear-gradient(88.41deg, #ffa500 0%, #ffa50060 104.72%), url("uploads/umnu/settingsim/233.jpg?68517");
+        color: #ffa500;
+    }
+
+            .pagination-container .pagination li.active,
+        .steps-desktop .steps {
+            background: #1d8fe1;
+        }
+        .button-pmb_primary,
+        .form-pmb .form__check:checked,
+        .card-metode-pembayaran .left .form-check .form-check-input:checked {
+            background-color: #1d8fe1;
+            border-color: #1d8fe1;
+        }
+
+        .button-pmb_primary-outline {
+            background: transparent;
+            border-color: #1d8fe1;
+            color: #1d8fe1;
+        }
+        .button-pmb_primary:hover,
+        .button-pmb_primary-outline:hover {
+            background: #1d8fe1;
+            filter: brightness(90%);
+        }
+
+        .tag-category.active,
+        .tag-category:hover {
+            border-color: #1d8fe1;
+            color: #1d8fe1;
+        }
+
+        #home-prodi .prodi .list-prodi .cta-more a,
+        #pengumuman-berita .list-berita .title a,
+        #auth-page .content-auth a,
+        .breadcrumb-pmb .container-breadcrumb ul li a:hover,
+        #tabs-pmb .nav-item .nav-link.active,
+        .navbar__landingpage .navbar-menu li:hover .navbar-item,
+        .navbar__landingpage .navbar-menu li:hover .navbar-item span,
+        #tabs-pmb .nav-item:hover .nav-link,
+        .icon-step-bertahap,
+        .card-pilihan-jalur .nama-jalur,
+        .card-pilihan-jalur a,
+        #pembayaran .content-pembayaran .card-bayar .list-pembayaran .right .copy,
+        .button-pmb_primary-invisible,
+        .button-pmb_primary-invisible:hover, .button-pmb_primary-invisible:active,
+        .card-user-guide span,
+        .card-user-guide .file-info a,
+        #berhasil-daftar .card-base-pmb .content-akun .list-akun .right .copy {
+            color: #1d8fe1;
+        }
+
+        #home-prodi .prodi .list-prodi .cta-more a:hover,
+        #pengumuman-berita .list-berita .title a:hover,
+        .footer__landingpage .topfooter .info-menu ul li a:hover {
+            color: #1d8fe1;
+            filter: brightness(80%);
+        }
+
+        .card-berita:hover,
+        .form-pmb .form__check:focus,
+        .form-pmb input[type=text]:active,
+        .form-pmb input[type=text]:focus,
+        .form-pmb input[type=text]:hover,
+        .form-pmb input[type=email]:hover,
+        .form-pmb input[type=email]:focus,
+        .form-pmb input[type=email]:active,
+        .form-pmb input[type=number]:hover, 
+        .form-pmb input[type=number]:focus, 
+        .form-pmb input[type=number]:active, 
+        .form-pmb input[type=password]:hover,
+        .form-pmb input[type=password]:focus,
+        .form-pmb input[type=password]:active,
+        .form-pmb .select2-selection:hover  {
+            border-color: #1d8fe1 !important;
+        }
+
+        #tabs-pmb .nav-item:has(.active),
+        .card-pilihan-jalur,
+        .form-pmb .form__radio:checked + label::before,
+        .card-metode-pembayaran:hover,
+        #pembayaran .content-pembayaran .card-bayar {
+            border-color: #1d8fe1;
+        }
+
+        .card-pilihan-jalur .image svg path,
+        .modal-confirmation .modal-dialog .modal-content .modal-body .content-confirmation svg path {
+            fill: #1d8fe1;
+        }
+
+        .card-pilihan-jalur,
+        .tag-category.active,
+        #pembayaran .content-pembayaran .card-bayar,
+        #pembayaran .card-body-pmb .content-akun, 
+        #metode-pembayaran .card-body-pmb .content-akun 
+        {
+            background: #1d8fe10C;
+        }
+
+        .form-check-input:focus {
+            box-shadow: 0 0 0 0.25rem #1d8fe125;
+        }
+
+    </style>
+<div class="breadcrumb-pmb">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="container-breadcrumb">
+                    <ul>
+                        <li class="flex-shrink-0"><img src="assets/v4/img/landing-page/icon-home.svg" alt="home"><a href="index.html">Beranda</a></li>
+                        <li><a href="program-studi.html">Program Studi</a></li>
+                        <li>S1 PENDIDIKAN BAHASA INGGRIS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="detail-program-studi">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 nopadding">
+                <div class="card-base-pmb">
+                    <div class="card-header-pmb" style="position: relative;">
+                        <h1 class="title">S1 PENDIDIKAN BAHASA INGGRIS</h1>
+                                                    <a href="#jalur" class="button button-pmb_primary btn-daftar">Daftar Sekarang</a>
+                                            </div>
+                    <div class="card-body-pmb">
+                        <nav id="tabs-pmb">
+                            <ul class="nav nav-pills" id="container-tabs-pmb">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#tentang">Tentang Prodi</a>
+                                </li>
+                                                                    <li class="nav-item">
+                                        <a class="nav-link" href="#jalur">Jalur Pendaftaran</a>
+                                    </li>
+                                                                                            </ul>
+                        </nav>
+                        <div id="content-tabs">
+                            <div id="tentang">
+                                <h1 class="title">Tentang Program Studi</h1>
+                                <div class="tentang row">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="list">
+                                            <h2 class="title-list">Akreditasi</h2>
+                                            <p class="description">Baik Sekali</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-none d-lg-flex col-lg-2">
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <div class="list">
+                                            <h2 class="title-list">Website</h2>
+                                                                                            <p class="description">-</p>
+                                                                                    </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                                                                    <a href="#jalur" class="button button-pmb_primary btn-daftar">Daftar Sekarang</a>
+                                                                            </div>
+                                    <div class="col-lg-12">
+                                        
+                                                                            </div>
+                                </div>
+                            </div>
+                                                                                        <div class="line-bold"></div>
+                                <div id="jalur">
+                                    <h1 class="title">Pilih Jalur Pendaftaran</h1>
+                                                                            <div class="card-jalur-pendaftaran">
+                                                                                            <h6 class="status-dibuka">Dibuka</h6>
+                                            
+                                            <div class="main-section ">
+                                                <div class="left-section">
+                                                    <div class="title-jalur-pendaftaran">
+                                                        <h1 class="title">PROGRAM INTERNASIONAL - Program Internasional</h1>
+                                                        <p class="description">
+                                                                                                                    </p>
+                                                        <p class="description">
+                                                            <strong style="color:#2A2A2C;font-weight:600;">Sistem Kuliah Reguler</strong>
+                                                                                                                    </p>
+                                                    </div>
+                                                </div>
+                                                <form action="/spmbfront/jalur-seleksi" method="post">
+                                                    <div class="right-section">
+                                                        <div class="date-price">
+                                                            <div class="items">
+                                                                <img src="assets/v4/img/landing-page/calendar.svg" alt="">
+                                                                <p>1 September 2026 - 30 April 2027</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <img src="assets/v4/img/landing-page/money.svg" alt="">
+                                                                                                                                    <p>Biaya Daftar <span>Gratis</span></p>
+                                                                                                                            </div>
+                                                        </div>
+                                                        <input type="hidden" name="key" value="20271/1/9/1/26">
+                                                        <input type="hidden" name="prodipilihan" value="88203">
+                                                        <input type="hidden" name="act" value="detail">
+                                                                                                                    <button type="submit" class="button button-pmb_primary">Daftar Sekarang</button>
+                                                                                                            </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                                                            <div class="card-jalur-pendaftaran">
+                                                                                            <h6 class="status-dibuka">Dibuka</h6>
+                                            
+                                            <div class="main-section ">
+                                                <div class="left-section">
+                                                    <div class="title-jalur-pendaftaran">
+                                                        <h1 class="title">RPL-PEROLEHAN SKS - RPL-PEROLEHAN SKS</h1>
+                                                        <p class="description">
+                                                                                                                    </p>
+                                                        <p class="description">
+                                                            <strong style="color:#2A2A2C;font-weight:600;">Sistem Kuliah RPL</strong>
+                                                                                                                    </p>
+                                                    </div>
+                                                </div>
+                                                <form action="/spmbfront/jalur-seleksi" method="post">
+                                                    <div class="right-section">
+                                                        <div class="date-price">
+                                                            <div class="items">
+                                                                <img src="assets/v4/img/landing-page/calendar.svg" alt="">
+                                                                <p>1 November 2026 - 28 Februari 2027</p>
+                                                            </div>
+                                                            <div class="items">
+                                                                <img src="assets/v4/img/landing-page/money.svg" alt="">
+                                                                                                                                                                                                            <p>Biaya Daftar <span>Rp. 200.000</span></p>
+                                                                                                                                                                                                </div>
+                                                        </div>
+                                                        <input type="hidden" name="key" value="20262/1/16/3/27">
+                                                        <input type="hidden" name="prodipilihan" value="88203">
+                                                        <input type="hidden" name="act" value="detail">
+                                                                                                                    <button type="submit" class="button button-pmb_primary">Daftar Sekarang</button>
+                                                                                                            </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                                                    </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function goShowDetail() {
+        $('#description-prodi p').css('-webkit-line-clamp', 'unset');
+        $('#show-more').css('display', 'none');
+        $('#show-less').css('display', 'flex');
+    }
+
+    function goHideDetail() {
+        $('#description-prodi p').css('-webkit-line-clamp', '3');
+        $('#show-more').css('display', 'flex');
+        $('#show-less').css('display', 'none');
+    }
+</script>
+
+<style>
+    .btn-daftar {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .status-jalur-belum {
+        display: inline-block;
+        margin-top: 0.75rem;
+        padding: 0.5rem 0.75rem;
+        border-radius: 999px;
+        background: #fff3cd;
+        color: #7a5b00;
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+
+    .status-jalur-belum-header {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        margin-top: 0;
+    }
+
+    @media (max-width: 767.98px) {
+        .status-jalur-belum-header {
+            position: static;
+            margin-top: 0.75rem;
+        }
+    }
+</style>            <section id="contact-us" class="d-none d-sm-block d-md-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 nopadding">
+                <div class="card-contact-us">
+                    <div class="row">
+                        <div class="col-12 col-lg-7 col-xl-7">
+                            <div class="content-contact">
+                                <h1>Kami siap membantu anda</h1>
+                                <p>Apabila kamu memiliki kendala atau pertanyaan. Silakan hubungi kami atau dapat juga membaca Petunjuk Pendaftaran terlebih dahulu</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5 col-xl-5">
+                            <div class="cta">
+                                                                                                        <a target="_blank" href="https://wa.me/6285216993300?text=Saya tanya terkait pendaftaran" class="btn btn-outline-white btn-contactus">
+                                        <button id="btn-whatsapp"><img src="assets/v4/img/landing-page/icon-wa.svg" alt="">Whatsapp</button>
+                                    </a>
+                                                                <a href="user-guide.html">
+                                    <button id="btn-user-guide">Petunjuk Pendaftaran</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer__landingpage d-none d-sm-block d-md-block">
+    <div class="topfooter">
+        <div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+            <div class="info-kampus">
+                <div class="info-kampus-logo">
+                    <img src="uploads/umnu/logoaplikasi/1894.jpg" alt="Logo Kampus" />
+                </div>
+                <div class="info-kampus-text">
+                    <p>Seleksi Penerimaan Mahasiswa Baru</p>
+                    <h1>Universitas Ma'arif Nahdlatul Ulama Kebumen</h1>
+                </div>
+            </div>
+            
+                        <div class="social-media">
+                                                                        <a href="https://www.instagram.com/umnu.kebumen" target="_blank">
+                            <img src="assets/v4/img/landing-page/social-media/social-ig.svg" alt="">
+                        </a>
+                            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+            <div class="info-kontak">
+                <h3>Kontak Kami</h3>
+                <ul>
+                                            <li id="link-footer-location">
+                            <span class="material-icons-round">location_on</span>
+                            Jalan Kutoarjo km.05 Jatisari Kebumen                        </li>
+                            
+                                            <li id="link-footer-phone">
+                            <span class="material-icons-round"> phone </span>
+                            02876601209                        </li>
+                                                                                    <li id="link-footer-email">
+                            <span class="material-icons-round"> mail </span>
+                            umnukebumen@gmail.com                        </li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+            <div class="info-menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li id="link-beranda">
+                        <a href="index.html">
+                            Beranda
+                        </a>
+                    </li>
+                    <li id="link-program-studi">
+                        <a href="program-studi.html">
+                            Program Studi
+                        </a></li>
+                    <li id="link-pengumuman">
+                        <a href="pengumuman.html">
+                            Informasi dan Pengumuman
+                        </a>
+                    </li>
+                    <li id="link-jalur-seleksi">
+                        <a href="jalur-seleksi.html">
+                            Jalur Pendaftaran
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+            <div class="info-menu">
+                <h3>Tautan</h3>
+                <ul>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+    <footer class="botfooter">
+        <div class="copyright">
+            Copyright @ 2026 Universitas Ma'arif Nahdlatul Ulama Kebumen        </div>
+    </footer>
+</section>        <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+        <link rel="stylesheet" href="assets/default/css/style.wa.min.css" />
+
+    <div id="okewa" class="okewa-style_1  okewa-right   branded">  
+        <div class="okewa-pulse_3" style="border-color:#0dc152;"></div>
+        <a href="https://wa.me/085216993300?text=Saya tanya terkait pendaftaran" target="_blank" style="filter:unset; ">
+            <div id="okewa-floating_cta" class="ok_animated ok_bounceInUp" style="background:#0dc152; z-index: 999;">    
+                <span class="okewa-fc_text">Butuh Bantuan? Hubungi Kami!</span>    
+                <img class="okewa-fc_icon" src="assets/v4/img/whatsapp-icon.png" alt="">  
+            </div>  
+        </a>
+    </div>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91361426-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('set', {
+            'user_id': 'Universitas Ma'arif Nahdlatul Ulama Kebumen :  - '
+        });
+        gtag('config', 'UA-91361426-5', {
+            'custom_map': {
+                'dimension1': 'PerguruanTinggi',
+                'dimension2': 'Pengguna',
+                'dimension3': 'HakAkses',
+                'dimension4': 'UnitKerja',
+                'metric1': 'Pageviews'
+            }
+        });
+
+        gtag('event', 'push_custom_var', {
+            'PerguruanTinggi': 'Universitas Ma'arif Nahdlatul Ulama Kebumen',
+            'Pengguna': 'Universitas Ma'arif Nahdlatul Ulama Kebumen :  - ',
+            'HakAkses': '',
+            'UnitKerja': ' - ',
+            'Pageviews': 1
+        });
+    </script>
+
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "ofu5vu16qk");
+
+        if (typeof clarity !== "undefined") {
+            clarity("set", "perguruan_tinggi", "Universitas Ma'arif Nahdlatul Ulama Kebumen");
+            clarity("set", "nama_role", "");
+            clarity("set", "pengguna", "Universitas Ma'arif Nahdlatul Ulama Kebumen :  - ");
+            clarity("set", "unit_kerja", " - ");
+        }
+    </script>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+<script>
+    if(firebaseConfig == undefined){
+        var firebaseConfig = {
+            apiKey: "AIzaSyBE85GSM4dBUZ8m9aoJZVpSOQltwQZttDc",
+            authDomain: "siakad-cloud-2.firebaseapp.com",
+            databaseURL: "https://siakad-cloud-2.firebaseio.com",
+            projectId: "siakad-cloud-2",
+            storageBucket: "siakad-cloud-2.appspot.com",
+            messagingSenderId: "735352312839",
+            appId: "1:735352312839:web:9aa5508b27862f29a146a2",
+            measurementId: "G-9GSZKDCXHL"
+        };
+        firebase.initializeApp(firebaseConfig);
+    }
+</script>
+    <script>
+        firebase.analytics();
+    </script>
+    
+                </body>
+
+</html>
