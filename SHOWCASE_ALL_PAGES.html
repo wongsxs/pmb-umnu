@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase UI/UX - Portal PMB UMNU Kebumen (8 Halaman Lengkap)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1075c2;
+            --dark: #0f172a;
+            --bg: #0b1120;
+            --card-bg: #1e293b;
+            --border: #334155;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        * { box-sizing: border-box; font-family: 'Poppins', sans-serif; margin: 0; padding: 0; }
+        body { background: var(--bg); color: var(--text-main); padding: 40px 20px; line-height: 1.6; }
+        .header-showcase { text-align: center; max-width: 900px; margin: 0 auto 50px; }
+        .badge-header { display: inline-block; background: rgba(16, 117, 194, 0.2); border: 1px solid rgba(16, 117, 194, 0.5); color: #38bdf8; font-size: 13px; font-weight: 600; padding: 6px 18px; border-radius: 50px; margin-bottom: 14px; }
+        .header-showcase h1 { font-size: 34px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 12px; color: #ffffff; }
+        .header-showcase p { color: var(--text-muted); font-size: 15px; }
+        .grid-screens { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 30px; max-width: 1400px; margin: 0 auto; }
+        .screen-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; box-shadow: 0 20px 30px -10px rgba(0,0,0,0.5); transition: transform 0.25s ease, border-color 0.25s ease; display: flex; flex-direction: column; }
+        .screen-card:hover { transform: translateY(-6px); border-color: #38bdf8; }
+        .browser-mockup-bar { background: #0f172a; padding: 12px 16px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--border); }
+        .dot { width: 10px; height: 10px; border-radius: 50%; }
+        .dot-red { background: #ef4444; }
+        .dot-yellow { background: #eab308; }
+        .dot-green { background: #22c55e; }
+        .mockup-url { background: #1e293b; color: #64748b; font-size: 11px; padding: 4px 14px; border-radius: 6px; margin-left: 10px; flex-grow: 1; font-family: monospace; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .screen-img-container { width: 100%; height: 380px; overflow-y: auto; background: #ffffff; position: relative; }
+        .screen-img-container img { width: 100%; height: auto; display: block; }
+        .screen-footer { padding: 18px 20px; background: #0f172a; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+        .screen-info h3 { font-size: 15px; font-weight: 700; color: #ffffff; margin-bottom: 2px; }
+        .screen-info p { font-size: 12px; color: var(--text-muted); margin: 0; }
+        .btn-view-live { background: var(--primary); color: #ffffff; text-decoration: none; font-size: 12px; font-weight: 600; padding: 7px 14px; border-radius: 8px; transition: background 0.2s ease; }
+        .btn-view-live:hover { background: #0b5694; }
+        .footer-note { text-align: center; margin-top: 60px; color: #64748b; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+    <header class="header-showcase">
+        <span class="badge-header">UI/UX Design Portfolio & Case Study</span>
+        <h1>Redesign Portal PMB Universitas Ma'arif Nahdlatul Ulama Kebumen</h1>
+        <p>Kompilasi 8 Halaman Lengkap Antarmuka Pengguna (User Interface) & Alur Pendaftaran Mahasiswa Baru</p>
+    </header>
+
+    <main class="grid-screens">
+        <!-- Screen 1 -->
+        <div class="screen-card">
+            <div class="browser-mockup-bar">
+                <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                <span class="mockup-url">pmb.umnu.ac.id/home</span>
+            </div>
+            <div class="screen-img-container">
+                <img src="HALAMAN_UNTUK_FIGMA/01_Beranda.png" alt="Beranda">
+            </div>
+            <div class="screen-footer">
+                <div class="screen-info">
+                    <h3>01. Halaman Beranda</h3>
+                    <p>Landing page, hero banner, & filter pencarian</p>
+                </div>
+                <a href="index.html" target="_blank" class="btn-view-live">Buka Live</a>
+            </div>
+        </div>
+
+        <!-- Screen 2 -->
+        <div class="screen-card">
+            <div class="browser-mockup-bar">
+                <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                <span class="mockup-url">pmb.umnu.ac.id/jalur-seleksi</span>
+            </div>
+            <div class="screen-img-container">
+                <img src="HALAMAN_UNTUK_FIGMA/02_Jalur_Pendaftaran.png" alt="Jalur Pendaftaran">
+            </div>
+            <div class="screen-footer">
+                <div class="screen-info">
+                    <h3>02. Jalur Pendaftaran</h3>
+                    <p>Seleksi reguler, beasiswa, dan RPL</p>
+                </div>
+                <a href="jalur-seleksi.html" target="_blank" class="btn-view-live">Buka Live</a>
+            </div>
+        </div>
+
+        <!-- Screen 3 -->
+        <div class="screen-card">
+            <div class="browser-mockup-bar">
+                <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                <span class="mockup-url">pmb.umnu.ac.id/program-studi</span>
+            </div>
+            <div class="screen-img-container">
+                <img src="HALAMAN_UNTUK_FIGMA/03_Program_Studi.png" alt="Program Studi">
+            </div>
+            <div class="screen-footer">
+                <div class="screen-info">
+                    <h3>03. Daftar Program Studi</h3>
+                    <p>Katalog seluruh jurusan S1 & S2</p>
+                </div>
+                <a href="program-studi.html" target="_blank" class="btn-view-live">Buka Live</a>
+            </div>
+        </div>
+
+        <!-- Screen 4 -->
+        <div class="screen-card">
+            <div class="browser-mockup-bar">
+                <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                <span class="mockup-url">pmb.umnu.ac.id/prodi/teknik-informatika</span>
+            </div>
+            <div class="screen-img-container">
+                <img src="HALAMAN_UNTUK_FIGMA/04_Detail_Prodi_TI.png" alt="Detail Prodi">
+            </div>
+            <div class="screen-footer">
+                <div class="screen-info">
+                    <h3>04. Detail Program Studi</h3>
+                    <p>Profil akreditasi, kurikulum & kuota prodi</p>
+                </div>
+                <a href="program-studi-detail-55202.html" target="_blank" class="btn-view-live">Buka Live</a>
+            </div>
+        </div>
+
+        <!-- Screen 5 -->
+        <div class="screen-card">
+            <div class="browser-mockup-bar">
+                <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                <span class="mockup-url">pmb.umnu.ac.id/pengumuman</span>
+            </div>
+            <div class="screen-img-container">
+                <img src="HALAMAN_UNTUK_FIGMA/05_Informasi_Pengumuman.png" alt="Pengumuman">
+            </div>
+            <div class="screen-footer">
+                <div class="screen-info">
+                    <h3>05. Informasi & Pengumuman</h3>
+                    <p>Berita beasiswa KIP-K, UKT, & jadwal</p>
+                </div>
+                <a href="pengumuman.html" target="_blank" class="btn-view-live">Buka Live</a>
+            </div>
+        </div>
+
+        <!-- Screen 6 -->
+        <div class="screen-card">
+            <div class="browser-mockup-bar">
+                <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                <span class="mockup-url">pmb.umnu.ac.id/pengumuman/detail</span>
+            </div>
+            <div class="screen-img-container">
+                <img src="HALAMAN_UNTUK_FIGMA/06_Detail_Pengumuman.png" alt="Detail Pengumuman">
+            </div>
+            <div class="screen-footer">
+                <div class="screen-info">
+                    <h3>06. Detail Artikel Berita</h3>
+                    <p>Poster resolusi penuh & rincian syarat</p>
+                </div>
+                <a href="detail-pengumuman-10.html" target="_blank" class="btn-view-live">Buka Live</a>
+            </div>
+        </div>
+
+        <!-- Screen 7 -->
+        <div class="screen-card">
+            <div class="browser-mockup-bar">
+                <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                <span class="mockup-url">pmb.umnu.ac.id/login</span>
+            </div>
+            <div class="screen-img-container">
+                <img src="HALAMAN_UNTUK_FIGMA/07_Login_Masuk.png" alt="Login">
+            </div>
+            <div class="screen-footer">
+                <div class="screen-info">
+                    <h3>07. Masuk Akun (Login)</h3>
+                    <p>Form autentikasi nomor pendaftar & PIN</p>
+                </div>
+                <a href="login.html" target="_blank" class="btn-view-live">Buka Live</a>
+            </div>
+        </div>
+
+        <!-- Screen 8 -->
+        <div class="screen-card">
+            <div class="browser-mockup-bar">
+                <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                <span class="mockup-url">pmb.umnu.ac.id/user-guide</span>
+            </div>
+            <div class="screen-img-container">
+                <img src="HALAMAN_UNTUK_FIGMA/08_Petunjuk_Pendaftaran.png" alt="Petunjuk">
+            </div>
+            <div class="screen-footer">
+                <div class="screen-info">
+                    <h3>08. Petunjuk Pendaftaran</h3>
+                    <p>User guide dokumen pendukung</p>
+                </div>
+                <a href="user-guide.html" target="_blank" class="btn-view-live">Buka Live</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-note">
+        <p>Project Portfolio UI/UX Desain Sistem Informasi PMB Universitas Ma'arif Nahdlatul Ulama Kebumen &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
